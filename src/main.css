@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Satisfy&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+
+h2, h3 {
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo-gama {
+    width: 30%;
+    display: block;
+    margin-left: auto;   
+    margin-right: auto;
+    margin-bottom: -25px;
+    margin-top: -25px; 
+}
+
+
+
+body {
+    background-color: #753cb7;
+}
+
+.conteudo {
+    max-width: 80%;
+    background-color: #5e2e92;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+.resultado {
+    padding: 15px;
+    background-color: #a379c1;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+#botaoCalcular {
+    width: 205px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #5e2e92;
+    background-color: #73dd3f;
+    border-color: #73dd3f;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+#botaoCalcular:hover {
+    background-color: #58a631;
+    border-color: #58a631;
+}
+
+label {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+
+input[type="number"] {
+    background-color: #5e2e92;
+    border-color: white;
+    border: 4px solid;
+    height: 50px;
+    max-width: 60%;
+}
+
+
+.acompanhantes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;        
+}
+
+input#acompanhamentos {
+    background-color: #5e2e92;
+    border-color: white;
+    border: 4px solid;   
+}
+
+.qtde {
+    margin-left: auto;
+    margin-right: auto;
+}

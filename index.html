@@ -3,56 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./src/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./src/main.css" />    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Gama Academy - Calculadora de churrasco</title>
   </head>
   <body>
-    <header>
-      <h5>GAMA ACADEMY</h5>
-      <h2>Calculadora de Churrasco</h2>
-    </header>
-
-    <div>
-      <label for="mulheres-qnt">Mulheres</label>
-      <input id="mulheres-qnt" type="text" />
-
-      <label for="homens-qnt">Homens</label>
-      <input id="homens-qnt" type="text" />
-
-      <label for="criancas-qnt">Crianças</label>
-      <input id="criancas-qnt" type="text" />
-      <br>
-      <label for="acompanhamentos">acompanhamentos</label>
-      <input id="acompanhamentos" type="checkbox" />
-    </div>
-    <div>
-      <label for="bebidas-alcoolicas">Bebidas alcoolicas</label>
-      <input id="bebidas-alcoolicas" type="text" />
-
-      <label for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
-      <input id="bebidas-nao-alcoolicas" type="text" />
-    </div>
-    <br>
-    <button id="botaoCalcular">Calcular</button>
-
-      <div>
-        <div>
-          <label for="total-carne" id="total-carne"></label>
+    <div class="conteudo text-center">
+      <header>
+        <div class="row logos">
+          <img class="logo-gama" src="./logo.png" alt="Logo da Gama">          
         </div>
-        <div>
-          <label for="total-pessoas" id="total-pessoas"></label>
+        <h2 class="mt-1">Calculadora de Churrasco</h2>
+      </header>
+      <main>
+        <div class="col-12">        
+          <div class="row qtde">
+            <h3 class="col-3">Comidas</h3>
+            <div class="col-3">
+              <input class="col-12" id="mulheres-qnt" type="number" />
+              <label class="col-12" for="mulheres-qnt">Mulheres</label>
+            </div>
+
+            <div class="col-3">
+              <input class="col-12" id="homens-qnt" type="number" />
+              <label class="col-12" for="homens-qnt">Homens</label>
+            </div>
+
+            <div class="col-3">
+              <input class="col-12" id="criancas-qnt" type="number" />
+              <label class="col-12" for="criancas-qnt">Crianças</label>
+            </div>
+            <br>
+          </div>
+          <div class="row acompanhantes">
+            <input id="acompanhamentos" type="checkbox" />
+            <label for="acompanhamentos">acompanhamentos</label>
+          </div>
+                  
+          <div class="row qtde">
+            <h3 class="col-3">Bebidas</h3>
+            <div class="col-3">
+              <input class="col-12" id="bebidas-alcoolicas" type="number" />
+              <label class="col-12" for="bebidas-alcoolicas">Quantos bebem cerveja?</label>
+            </div>
+
+            <div class="col-3">
+              <input class="col-12" id="bebidas-nao-alcoolicas" type="number" />
+              <label class="col-12" for="bebidas-nao-alcoolicas">Quantos bebem refrigerante?</label>
+            </div>
+          </div>
+          </div>
+          <br>
+          <button class="btn btn-success" id="botaoCalcular">Calcular</button>
+
+          
+          <div class="row resultado mt-3">
+            <div class="column col-6">
+              <div class="row">
+                <h5>Total de Pessoas: </h5>
+                <label for="total-pessoas" id="total-pessoas"></label>
+              </div>
+              <div class="row">
+                <h5>Total de Carne: </h5>
+                <label for="total-carne" id="total-carne"></label>
+              </div>
+              <div class="row">
+                <h5>Acompanhamentos: </h5>
+                <label for="total-acompanhamento" id="total-acompanhamento"></label>
+              </div>
+            </div>
+            <div class="column col-6">
+              <div class="row">
+                <h5>Bebidas alcoólicas: </h5>
+                <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+              </div>
+              <div class="row">
+                <h5>Bebidas não alcoólicas: </h5>
+                <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+              </div>
+            </div>          
+          </div>
         </div>
-        <div>
-          <label for="total-acompanhamento" id="total-acompanhamento"></label>
-        </div>
-        <div>
-          <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
-        </div>
-        <div>
-          <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
-        </div>
-        <div>
-      </div>
+        
+      </main>
     </div>
     <script src="./src/main.js"></script>
   </body>
