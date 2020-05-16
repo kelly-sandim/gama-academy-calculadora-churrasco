@@ -31,6 +31,14 @@ body {
     
 }
 
+
+body.body-veg {
+    /*background-color: #73dd3f;*/
+    background-image: url("./churras-veg.jpeg");
+    background-size: cover;
+    
+}
+
 .conteudo {
     max-width: 80%;
     background-color: rgba(94, 46, 146, 0.60);    
@@ -39,9 +47,25 @@ body {
     height: 100vh;
 }
 
+.conteudo-veg {
+    max-width: 80%;
+    background-color: rgba(115, 221, 63, 0.60);    
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
 .resultado {
     padding: 25px;
     background-color: rgba(163, 121, 193, 0.75);
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+}
+
+.resultado-veg {
+    padding: 25px;
+    background-color: rgba(156, 219, 125, 0.75);
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 5px;
@@ -63,6 +87,61 @@ body {
 #botaoCalcular:hover {
     background-color: #58a631;
     border-color: #58a631;
+}
+
+#botaoCalcularVeg {
+    width: 205px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #73dd3f;
+    background-color: #5e2e92;
+    border-color: #5e2e92;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+#botaoCalcularVeg:hover {
+    background-color: #4e2877;
+    border-color: #4e2877;
+}
+
+#botaoVegetariano {
+    background-color: #5e2e92;
+    border-color: #5e2e92;
+    color: #73dd3f;
+    display: block;
+    margin-right: auto;
+    margin-left: 50px; 
+    width: 495px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#botaoVegetariano:hover {
+    background-color: #4e2877;
+    border-color: #4e2877;    
+}
+
+
+#botaoCarne {
+    background-color: #73dd3f;
+    border-color: #73dd3f;
+    color: #5e2e92;
+    display: block;
+    margin-right: auto;
+    margin-left: 50px; 
+    width: 495px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#botaoCarne:hover {
+    background-color: #58a631;
+    border-color: #58a631;    
 }
 
 label {
@@ -90,6 +169,13 @@ input[type="number"] {
     max-width: 60%;
 }
 
+input.veggie {
+    background-color: rgba(115, 221, 63, 0.75);
+    border-color: white;
+    border: 4px solid;
+    height: 50px;
+    max-width: 60%;
+}
 
 .acompanhantes {
     display: block;

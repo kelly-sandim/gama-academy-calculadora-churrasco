@@ -10,31 +10,36 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Gama Academy - Calculadora de churrasco</title>
+    <style>
+        * {
+            color: #1a1a1a;
+        }
+    </style>
   </head>
-  <body>
-    <div class="conteudo text-center">
+  <body class="body-veg">
+    <div class="conteudo-veg text-center">
       <header>
         <div class="row logos">
-          <img class="logo-gama" src="./logo.png" alt="Logo da Gama">          
+          <img class="logo-gama" src="./logo-veg.png" alt="Logo da Gama">          
         </div>
-        <h2 class="mt-1">Calculadora de Churrasco</h2>
+        <h2 class="mt-1">Calculadora de Churrasco Vegetariano</h2>
       </header>
       <main>
         <div class="col-12">        
           <div class="row qtde">
             <h3 class="col-3">Comidas</h3>
             <div class="col-3">
-              <input class="col-12" id="mulheres-qnt" type="number" />
+              <input class="col-12 veggie" id="mulheres-qnt" type="number" />
               <label class="col-12" for="mulheres-qnt">Mulheres</label>
             </div>
 
             <div class="col-3">
-              <input class="col-12" id="homens-qnt" type="number" />
+              <input class="col-12 veggie" id="homens-qnt" type="number" />
               <label class="col-12" for="homens-qnt">Homens</label>
             </div>
 
             <div class="col-3">
-              <input class="col-12" id="criancas-qnt" type="number" />
+              <input class="col-12 veggie" id="criancas-qnt" type="number" />
               <label class="col-12" for="criancas-qnt">Crianças</label>
             </div>
             <br>
@@ -47,17 +52,17 @@
           <div class="row qtde">
             <h3 class="col-3">Bebidas</h3>
             <div class="col-3">
-              <input class="col-12" id="bebidas-alcoolicas" type="number" />
+              <input class="col-12 veggie" id="bebidas-alcoolicas" type="number" />
               <label class="col-12" for="bebidas-alcoolicas">Quantos bebem cerveja?</label>
             </div>
 
             <div class="col-3">
-              <input class="col-12" id="bebidas-nao-alcoolicas" type="number" />
+              <input class="col-12 veggie" id="bebidas-nao-alcoolicas" type="number" />
               <label class="col-12" for="bebidas-nao-alcoolicas">Quantos bebem refrigerante?</label>
             </div>
 
             <div class="col-3">
-              <input class="col-12" id="sucos" type="number" />
+              <input class="col-12 veggie" id="sucos" type="number" />
               <label class="col-12" for="sucos">Quantos bebem suco?</label>
             </div>
           </div>
@@ -65,22 +70,22 @@
           <br>
           <div class="row">
             <div class="col-6">
-              <button class="col-12 btn btn-danger" onclick="location.href = 'index_veg.html'" id="botaoVegetariano">Acesse aqui a versão Vegetariana!</button>
+              <button class="col-12 btn btn-danger" onclick="location.href = 'index.html'" id="botaoCarne">Acesse aqui a versão Normal!</button>
             </div>
             <div class="col-6">
-              <button class="col-12 btn btn-success" id="botaoCalcular">Calcular</button>
+              <button class="col-12 btn btn-success" id="botaoCalcularVeg">Calcular</button>
             </div> 
           </div>
 
           
-          <div class="row resultado mt-3">
+          <div class="row resultado-veg mt-3">
             <div class="column col-6">
               <div class="row">
                 <h5 class="mr-1">Total de Pessoas: </h5>
                 <label for="total-pessoas" id="total-pessoas"></label>
               </div>
               <div class="row">
-                <h5 class="mr-1">Total de Carne: </h5>
+                <h5 class="mr-1">Total de Vegetais: </h5>
                 <label for="total-carne" id="total-carne"></label>
               </div>
               <div class="row">
