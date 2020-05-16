@@ -33,7 +33,7 @@ const calcularChurrasco = () => {
     document.getElementById("total-pessoas").innerHTML = `<b> ${totalPessoas} pessoas</b>`
     document.getElementById("total-acompanhamento").innerHTML = `<b> ${getValueMeasure(totalAcompanhamento, 1)}</b>`
     document.getElementById("total-bebidas-nao-alcoolicas").innerHTML = `<b> ${getValueMeasure(totalBebidasNaoAlcoolicas, 2)}</b>`
-    document.getElementById("total-bebidas-alcoolicas").innerHTML = `<b> ${getValueMeasure(totalBebidasAlcoolicas, 2)}</b>`
+    document.getElementById("total-bebidas-alcoolicas").innerHTML = `<b>${getValueMeasure(totalBebidasAlcoolicas, 2)}</b>`
 
 }
 
