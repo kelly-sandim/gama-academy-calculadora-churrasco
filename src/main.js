@@ -9,7 +9,8 @@ const calcularChurrasco = () => {
 
     const acompanhamentos = document.getElementById('acompanhamentos').value;
     const bebidasAlcoolicas = document.getElementById('bebidas-alcoolicas').value;
-    const bebidasNaoAlcoolicas = document.getElementById('bebidas-nao-alcoolicas').value + document.getElementById('sucos').value;
+    const bebidasNaoAlcoolicas = Number(document.getElementById('bebidas-nao-alcoolicas').value) + Number(document.getElementById('sucos').value);
+    console.log(bebidasNaoAlcoolicas);
 
 
     // Logica de valores por grama e multiplicacao da quantidade de pessoas
