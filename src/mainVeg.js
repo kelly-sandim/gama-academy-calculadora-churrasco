@@ -1,4 +1,4 @@
-const botao = document.querySelector("#botaoCalcular")
+const botaoVeg = document.querySelector("#botaoCalcularVeg")
 
 const calcularChurrasco = () => {
 
@@ -57,7 +57,7 @@ function getValueMeasure(val, type) {
     }
 }
 
-botao.addEventListener("click", calcularChurrasco)
+botaoVeg.addEventListener("click", calcularChurrasco)
 
 
 /***********************************************************************************************/
